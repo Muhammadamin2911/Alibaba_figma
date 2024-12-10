@@ -1,0 +1,2494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Kablammo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color_1: #fe7a65;
+    --color_2: #fe3e00;
+    --color_3: #921000;
+    --color_4: #e1a53c;
+    --bgc_footer: #445268;
+    --font_color: #fff;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.up {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color_1);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+.up .fig2 {
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+    background-color: var(--color_2);
+    margin-top: -275px;
+    margin-left: 256px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.up .fig2 img {
+    transform: rotate(-45deg);
+    margin-top: 358px;
+}
+
+.up .fig2 h1 {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+    color: var(--font_color);
+    font-size: 30px;
+}
+
+.up .fig2 p {
+    transform: rotate(-45deg);
+    margin-bottom: 420px;
+    color: var(--font_color);
+    font-size: 16px;
+}
+
+.up .fig2 span h1 {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 167px;
+    font-size: 15px;
+    color: var(--color_2);
+    z-index: 3;
+}
+
+.up .fig1 {
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    background-color: var(--color_1);
+    margin-top: -50px;
+    position: absolute;
+    z-index: 1;
+}
+
+.up .fig3 {
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background-color: var(--color_3);
+    margin-top: -75px;
+    margin-left: 970px;
+    position: absolute;
+    z-index: -1;
+}
+
+.up .fig3 .text {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--font_color);
+    margin-top: 70px;
+    margin-left: 40px;
+    transform: rotate(-45deg);
+    padding: 5px 30px;
+    font-size: 18px;
+    color: var(--color_2);
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    padding: 0, 3%;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    position: sticky;
+    top: -70px;
+    z-index: 1;
+}
+
+header .bolim {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header .bolim .pp {
+    width: 100px;
+    height: 30px;
+    padding: 0, 20px;
+}
+
+header .bolim p {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+header .bolim p:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+header .asosiy {
+    padding: 0px 3%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .asosiy .search {
+    width: 700px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--color_2);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+header .asosiy .search input {
+    border: none;
+    background-color: transparent;
+    width: 580px;
+    outline: none;
+}
+
+header .asosiy .search button {
+    width: 120px;
+    height: 30px;
+    border-radius: 0 21px 21px 0;
+    border: none;
+    background-color: var(--color_2);
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+header .asosiy .icon {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+header .asosiy .iconx p {
+    font-size: 12px;
+}
+
+header .asosiy .icon p {
+    font-size: 12px;
+}
+
+header .asosiy .iconx {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+header .chiziq {
+    margin-top: 20px;
+}
+
+header .categories {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3%;
+    background-color: #fff;
+
+}
+
+header .categories hr {
+    height: 20px;
+}
+
+header .categories .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .categories .reight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .categories .left .categories_select {
+    display: none;
+}
+
+header .categories .left ul {
+    display: flex;
+    gap: 18px;
+}
+
+header .categories .left ul {
+    list-style: none;
+}
+
+header .categories .left ul a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+header .categories select {
+    border: none;
+}
+
+header .categories .reight a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rectangle {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #E6F2FE;
+    margin-top: 30px;
+    text-align: end;
+}
+
+.rectangle a {
+    text-decoration: none;
+    color: #000;
+}
+
+.banner .grid_blok {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.banner .grid_blok .item_blokx {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 4px 5px;
+    background-color: #fff;
+}
+
+.banner .grid_blok .item_blokx b {
+    font-size: 14px;
+}
+
+
+.banner .grid_blok .item_blok p {
+    margin-top: -38px;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.banner .grid_blok .item_blokx .image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color_1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .grid_blok .item_blokx .image img {
+    width: 30px;
+    height: 30px;
+}
+
+.banner .grid_blok .item_blokx {
+    font-size: 15px;
+}
+
+.banner .grid_blok .item_blok button {
+    width: 150px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.banner .my_markets {
+    width: 94%;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 20px 3%;
+    padding: 25px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+.banner .my_markets .market_left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.banner .my_markets .market_left .products .product {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.banner .my_markets .market_left .products .product .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.banner .my_markets .market_left .products .product .image {
+    display: flex;
+    gap: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.banner .my_markets .market_center img {
+    width: 800px;
+    height: 450px;
+}
+
+.banner .my_markets .market_reight {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.banner .my_markets .market_reight .market_card {
+    display: flex;
+    height: 90px;
+    padding: 8px;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.banner .my_markets .market_reight .market_card img {
+    width: 76px;
+    height: 76px;
+}
+
+.banner .my_markets .market_reight .cad1 {
+    background-color: #ffddd3;
+}
+
+.banner .my_markets .market_reight .cad2 {
+    background-color: #f4f4f4;
+}
+
+.banner .my_markets .market_reight button {
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--color_2);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.banner .my_markets .market_reight button:hover {
+    background-color: var(--color_2);
+    color: #fff;
+}
+
+.guide {
+    width: 94%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    background: linear-gradient(to right, #ff5309, #802d04);
+    justify-content: space-evenly;
+    margin: 20px 3%;
+    padding: 15px;
+    border-radius: 20px;
+    ;
+}
+
+.guide .guide_card {
+    width: 320px;
+    height: 170px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 13px;
+
+}
+
+.guide .guide_cad {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+
+}
+
+.guide .guide_card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.guide .guide_cad p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.guide .guide_cad h3 {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.guide .guide_cad button {
+    margin-top: 22px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.guide .guide_card .images .image {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+
+.guide .guide_card .images .image img {
+    width: 100px;
+    height: 100px;
+}
+
+.guide .guide_card .images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tip {
+    width: 94%;
+    height: 750px;
+    margin: 3%;
+    border-radius: 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 455px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.tip .tip_card {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.tip .tip_card .cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tip .tip_card .name {
+    display: flex;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.tip .tip_card .name img {
+    width: 25px;
+    height: 25px;
+}
+
+.tip .tip_card .name h1 {
+    font-size: 25px;
+}
+
+.tip .tip_card .cards .card img {
+    width: 100px;
+    height: 100px;
+}
+
+.tip .tip_card .cards .card h1 {
+    font-size: 12px;
+}
+
+.tip .tip_card .cards .card p {
+    font-size: 12px;
+}
+
+.tip .tip_card .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tip .tip_card .cards .card .image {
+    background-color: #ececec;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip .grid_products {
+    width: 94%;
+    margin: 3%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 680px);
+}
+
+.tip .grid_products h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.tip .grid_products .products {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.tip .grid_products .products .card_products {
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.tip .grid_products .products .card_products .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tip .grid_products .products .card_products .product {
+    background-color: #f6f6f6;
+    width: 305px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.tip .grid_products .products .card_products .product h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card_blok {
+    width: 94%;
+    height: auto;
+    margin: 3%;
+}
+
+.card_blok .blok_flex {
+    display: flex;
+
+}
+
+.card_blok .head_x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card_blok .head_x hr {
+    width: 83%;
+    height: 7px;
+    background-color: rgb(226, 223, 223);
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.card_blok .head_x2 hr {
+    width: 93%;
+}
+
+.card_blok .head_x3 hr {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .head_x4 hr {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .head_x5 hr {
+    width: 88%;
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .head_x3 hr {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .head_x4 h1 {
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .head_xx hr {
+    width: 250px;
+}
+
+.card_blok .head_x h1 {
+    display: block;
+    width: auto;
+    font-size: 20px;
+}
+
+.card_blok .blok_flex {
+    margin-bottom: 30px;
+}
+
+.card_blok .blok_flex .blok {
+    width: 94%;
+    background-color: #fff;
+    padding: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.card_blok .blok_flex .blok .card h1 {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.card_blok .blok_flex .blok .card p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.card_blok .blok_flex .blok .card .card_image img {
+    margin-left: 150px;
+    width: 70px;
+    height: 70px;
+}
+
+.card_blok .blok_flex .blok .image img {
+    margin: -15px;
+    width: 250px;
+    height: 250px;
+}
+
+.card_blok .blok_flex .blok .image {
+    position: relative;
+}
+
+.card_blok .blok_flex .blok .image .source {
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    left: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.card_blok .deals_cards {
+    display: grid;
+    gap: 38px;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: repeat(150px);
+}
+
+.card_blok .deals_cards .cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.card_blok .deals_cards .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_blok .deals_cards .cards .more {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--color_2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font_color);
+    font-size: 12px;
+}
+
+.card_blok .deals_cards .cards .sum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_blok .deals_cards .cards .sum span {
+    display: flex;
+    gap: 10px;
+}
+
+.card_blok .deals_cards .cards .sum .prosent {
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--color_2);
+    color: var(--font_color);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_blok .quotation {
+    display: grid;
+    grid-template-columns: repeat(2, 680px);
+    grid-template-rows: 270px;
+    justify-content: space-between;
+}
+
+.card_blok .quotation .card .card_text {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+}
+
+.card_blok .quotation .card .card_text .text {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--font_color);
+    font-size: 20px;
+}
+
+.card_blok .quotation .card h1 {
+    font-size: 25px;
+    color: #f4f4f4;
+}
+
+.card_blok .quotation .card .card_text button {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.card_blok .quotation .card {
+
+    background-image: url("./accessories.img/Design-Blue-Box.png");
+    background-size: cover;
+    padding: 30px;
+}
+
+.card_blok .quotation .quotes {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.card_blok .quotation .quotes h1 {
+    font-size: 25px;
+}
+
+.card_blok .quotation .quotes .carts {
+    margin-top: 30px;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(2, 45px);
+}
+
+.card_blok .quotation .quotes .carts .name {
+    border: 2px solid rgb(196, 196, 196);
+    grid-column: 1/3;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.card_blok .quotation .quotes .carts .name input {
+    width: 400px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.card_blok .quotation .quotes .carts .quantity {
+    border: 2px solid rgb(198, 198, 198);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card_blok .quotation .quotes .carts .quantity input {
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.card_blok .quotation .quotes .carts .piece {
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    padding: 11px;
+
+    font-size: 18px;
+}
+
+.card_blok .quotation .quotes .carts button {
+    height: 30px;
+    background-color: var(--color_2);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card_blok .just_cards {
+    display: grid;
+    grid-template-columns: repeat(6, 220px);
+    grid-template-rows: repeat(2, 310px);
+    justify-content: space-between;
+}
+
+.card_blok .just_cards .card {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.card_blok .just_cards .card .image {
+    display: flex;
+    justify-content: center;
+}
+
+.card_blok .just_cards .card .image img {
+    width: 150px;
+    height: 150px;
+}
+
+.card_blok .just_cards .card .text p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card_blok .just_cards .card h4 {
+    margin-top: 30px;
+}
+
+.card_blok .just_cards .card p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.card_blok .text p {
+    color: gray;
+    font-size: 12px;
+}
+
+.card_blok .trade_services {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card_blok .trade_services .trade_card {
+    background-color: #fff;
+}
+
+.card_blok .trade_services .trade_card .image img {
+    width: 330px;
+}
+
+.card_blok .trade_services .trade_card .card_text {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.card_blok .trade_services .trade_card .card_text .text p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.card_blok .head_x6 hr {
+    width: 77%;
+}
+
+.card_blok .flags {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card_blok .flags .flag {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card_blok .flags .flag a {
+    text-decoration: none;
+}
+
+.garden {
+    width: 98%;
+    height: 60px;
+    background-color: #3f2501;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.garden .check {
+    position: relative;
+    margin-left: 200px;
+}
+
+.garden .check img {
+    width: 110px;
+}
+
+.garden .check h3 {
+    width: 90px;
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    left: 10px;
+    top: 3px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.garden .check h3 img {
+    width: 10px;
+}
+
+.garden h1 {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.garden .fig {
+    margin-top: -60px;
+    position: relative;
+    margin-right: 355px;
+}
+
+.garden .fig img {
+    position: absolute;
+}
+
+.garden .fig button {
+    width: 120px;
+    height: 30px;
+    top: 15px;
+    left: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    color: #3f2501;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.garden .fig .nuqta {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+}
+
+.garden .left {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 130vh;
+    background-color: #445268;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer .input_x {
+    margin-top: 20px;
+    gap: 20px;
+}
+
+footer .input_x input {
+    width: 350px;
+    height: 35px;
+    background-color: #313d51;
+    border: 1px solid rgb(255, 255, 255);
+    padding-left: 20px;
+    outline: none;
+    color: #ffffff;
+}
+
+footer .input_x button {
+    width: 100px;
+    height: 35px;
+    background-color: #313d51;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+footer .input_text {
+    margin-right: 130px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+footer .footer_links {
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .footer_links .links ul {
+    text-align: left;
+    list-style: none;
+}
+
+footer .footer_links .links ul b {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+footer .footer_links .links ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+footer hr {
+    width: 80%;
+    border: 1px solid #000;
+    margin-left: 150px;
+}
+
+footer .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+footer .download span {
+    color: #ffffff;
+}
+
+footer .download .aplle {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #9c9c9c;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer .download .android {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #84d83f;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+footer .download .alibaba {
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+
+}
+
+footer .download .alibaba p {
+    letter-spacing: 2px;
+}
+
+footer .download .follow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .download .follow i {
+    font-size: 25px;
+    color: #fff;
+}
+
+footer .footer_text {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer .footer_text p {
+    font-size: 20px;
+}
+
+footer .sites {
+    justify-content: center;
+    padding: 10px 250px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+footer .side_bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+@media (max-width: 700px) {
+    body {
+        width: 700px;
+    }
+    .up{
+display: none;    }
+    header {
+        width: 700px;
+        height: 130px;
+        padding: 0, 3%;
+        margin-top: 0px;
+        padding-bottom: 30px;
+        background-color: #fff;
+        position: sticky;
+        top: -100px;
+        overflow-x: hidden;
+        z-index: 1;
+    }
+
+    header .bolim {
+        width: 700px;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    header .bolim .pp {
+        width: 100px;
+        height: 30px;
+        padding: 0, 20px;
+    }
+
+    header .bolim p {
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    header .bolim p:hover {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    header .asosiy {
+        padding: 0px 3%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    header .asosiy .logo img {
+        width: 100px;
+    }
+
+    header .asosiy .search {
+        width: 350px;
+        height: 30px;
+        border-radius: 20px;
+        border: 1px solid var(--color_2);
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding-left: 20px;
+    }
+
+    header .asosiy .search input {
+        border: none;
+        background-color: transparent;
+        width: 300px;
+        outline: none;
+    }
+
+    header .asosiy .search button {
+        width: 120px;
+        height: 30px;
+        border-radius: 0 21px 21px 0;
+        border: none;
+        background-color: var(--color_2);
+        margin-left: 10px;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    header .asosiy .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 8px;
+
+    }
+
+    header .asosiy .icon img {
+        width: 10px;
+    }
+
+    header .asosiy .iconx p {
+        font-size: 8px;
+        width: 45px;
+
+    }
+
+    header .asosiy .icon p {
+        font-size: 8px;
+    }
+
+    header .asosiy .iconx {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        padding-top: 8px;
+    }
+
+    header .asosiy .iconx img {
+        width: 12px;
+    }
+
+    header .chiziq {
+        margin-top: 20px;
+    }
+
+    header .categories {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 3%;
+        background-color: #fff;
+       
+
+    }
+
+    header .categories hr {
+        height: 20px;
+    }
+
+    header .categories .left {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header .categories .reight {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header .categories .left ul {
+        display: none;
+        gap: 5px;
+
+    }
+
+    header .categories .left .categories_select {
+        display: block;
+    }
+
+
+    header .categories .left ul {
+        list-style: none;
+    }
+
+    header .categories .left ul a {
+        text-decoration: none;
+        font-size: 10px;
+        color: #000;
+    }
+
+    header .categories select {
+        border: none;
+        font-size: 12px;
+    }
+
+    header .categories .reight a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 0px;
+        background-color: #E6F2FE;
+        text-align: end;
+    }
+
+    .rectangle a {
+        text-decoration: none;
+        color: #000;
+        font-size: 10px;
+    }
+
+    .rectangle p {
+        font-size: 10px;
+    }
+
+
+    .banner .grid_blok {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .banner .grid_blok .item_blokx {
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 4px 5px;
+        background-color: #fff;
+    }
+
+    .banner .grid_blok .item_blokx b {
+        font-size: 8px;
+    }
+
+
+    .banner .grid_blok .item_blok p {
+        margin-top: -28px;
+        color: #fff;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .banner .grid_blok .item_blok img {
+        width: 80px;
+    }
+
+    .banner .grid_blok .item_blokx .image {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--color_1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .grid_blok .item_blokx .image img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .banner .grid_blok .item_blokx {
+        font-size: 15px;
+    }
+
+    .banner .grid_blok .item_blok button {
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 40px;
+        background-color: transparent;
+    }
+
+    .banner .my_markets {
+        width: 94%;
+        height: 380px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        margin: 20px 3%;
+        padding: 25px 20px;
+        background-color: #fff;
+        border-radius: 20px;
+
+    }
+
+    .banner .my_markets .market_left {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .banner .my_markets .market_left h1 {
+        font-size: 20px;
+    }
+
+    .banner .my_markets .market_left .products .product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner .my_markets .market_left .products .product i {
+        font-size: 8px;
+    }
+
+    .banner .my_markets .market_left .products .product .left {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .banner .my_markets .market_left .products .product .left p {
+        font-size: 12px;
+    }
+
+    .banner .my_markets .market_left .products .product .left img {
+        width: 15px;
+    }
+
+
+    .banner .my_markets .market_left .products .product .image {
+        gap: 5px;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(236, 236, 236);
+    }
+
+    .banner .my_markets .market_center img {
+        display: none;
+    }
+
+    .banner .my_markets .market_reight {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .banner .my_markets .market_reight p {
+        font-size: 12px;
+        width: 220px;
+
+    }
+
+    .banner .my_markets .market_reight .market_card {
+        display: flex;
+        height: 90px;
+        padding: 8px;
+        justify-content: space-between;
+        border-radius: 8px;
+    }
+
+    .banner .my_markets .market_reight .market_card img {
+        width: 80px;
+        height: 76px;
+    }
+
+    .banner .my_markets .market_reight .cad1 {
+        background-color: #ffddd3;
+        width: 220px;
+
+    }
+
+    .banner .my_markets .market_reight .cad2 {
+        background-color: #f4f4f4;
+        width: 220px;
+
+    }
+
+    .banner .my_markets .market_reight h1 {
+        font-size: 14px;
+    }
+
+    .banner .my_markets .market_reight button {
+        width: 220px;
+        height: 20px;
+        border-radius: 20px;
+        border: 2px solid var(--color_2);
+        background-color: transparent;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .banner .my_markets .market_reight button:hover {
+        background-color: var(--color_2);
+        color: #fff;
+    }
+
+    .guide {
+        width: 94%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        background: linear-gradient(to right, #ff5309, #802d04);
+        border-radius: 20px;
+        gap: 60px;
+        padding: 50px;
+
+    }
+
+    .guide .guide_card {
+        width: 280px;
+        height: 170px;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 13px;
+        margin-left: -50px;
+
+    }
+
+    .guide .guide_cad {
+        width: 270px;
+        height: 150px;
+        border-radius: 20px;
+        margin-left: -50px;
+        margin-bottom: -50px;
+    }
+
+    .guide .guide_card p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .guide .guide_cad p {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #fff;
+    }
+
+    .guide .guide_cad h3 {
+        font-size: 20px;
+        margin-top: 5px;
+        color: #fff;
+    }
+
+    .guide .guide_cad button {
+        margin-top: 22px;
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        background-color: #fff;
+    }
+
+    .guide .guide_card .images .image {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e5e5e5;
+    }
+
+    .guide .guide_card .images .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .guide .guide_card .images {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .tip {
+        width: 94%;
+        height: 1100px;
+        margin: 3%;
+        border-radius: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 313px);
+        grid-template-rows: repeat(3, 170px);
+    }
+
+    .tip .tip_card {
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 15px;
+    }
+
+    .tip .tip_card .cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .tip .tip_card .name {
+        display: flex;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
+
+    .tip .tip_card .name img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .tip .tip_card .name h1 {
+        font-size: 15px;
+    }
+
+    .tip .tip_card .cards .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tip .tip_card .cards .card h1 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .tip .tip_card .cards .card p {
+        font-size: 12px;
+    }
+
+    .tip .tip_card .cards .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tip .tip_card .cards .card .image {
+        background-color: #ececec;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tip .tip_card .cards .card .image img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .tip .grid_products {
+        width: 94%;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 680px;
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .tip .grid_products h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .tip .grid_products p {
+        font-size: 15px;
+    }
+
+    .tip .grid_products .products {
+        width: 94%;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .tip .grid_products .products .card_products {
+        display: flex;
+        gap: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 20px;
+    }
+
+    .tip .grid_products .products .card_products .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tip .grid_products .products .card_products .product {
+        background-color: #f6f6f6;
+        width: 270px;
+        height: 90px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .tip .grid_products .products .card_products .product img {
+        width: 50px;
+    }
+
+
+    .tip .grid_products .products .card_products .product h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card_blok {
+        width: 94%;
+        height: auto;
+        margin: 3%;
+    }
+
+    .card_blok .blok_flex {
+        display: flex;
+
+    }
+
+    .card_blok .head_x {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .card_blok .head_x hr {
+        width: 75%;
+        height: 7px;
+        background-color: rgb(226, 223, 223);
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+
+    .card_blok .head_x2 hr {
+        width: 88%;
+    }
+
+
+
+    .card_blok .head_x4 hr {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_blok .head_x4 img {
+        width: 40px;
+    }
+
+    .card_blok .head_x5 hr {
+        width: 82%;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_blok .head_x3 hr {
+        width: 68%;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_blok .head_x4 h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .card_blok .head_xx hr {
+        width: 90px;
+    }
+
+    .card_blok .head_x h1 {
+        display: block;
+        width: auto;
+        font-size: 14px;
+    }
+
+    .card_blok .blok_flex {
+        margin-bottom: 30px;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, 300px);
+
+    }
+
+    .card_blok .blok_flex hr {
+        display: none;
+    }
+
+    .card_blok .blok_flex .blok {
+        width: 94%;
+        background-color: #fff;
+        padding: 15px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .card_blok .blok_flex .blok .card h1 {
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_blok .blok_flex .blok .card p {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: gray;
+    }
+
+    .card_blok .blok_flex .blok .card .card_image img {
+        margin-left: 150px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .card_blok .blok_flex .blok .image img {
+        margin: -15px;
+        width: 282px;
+        height: 282px;
+    }
+
+    .card_blok .blok_flex .blok .image {
+        position: relative;
+        width: 282px;
+        height: 282px;
+        margin-bottom: 30px;
+    }
+
+    .card_blok .blok_flex .blok .image .source {
+        width: 100px;
+        height: 30px;
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 20px;
+        left: 30px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .card_blok .deals_cards {
+        display: grid;
+        gap: 38px;
+        grid-template-columns: repeat(1, 450px);
+        grid-template-rows: repeat(3, 150px);
+        justify-content: center;
+    }
+
+    .card_blok .deals_cards .cards {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .card_blok .deals_cards .cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card_blok .deals_cards .cards .card img {
+        width: 100px;
+    }
+
+    .card_blok .deals_cards .cards .more {
+        width: 100px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: var(--color_2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--font_color);
+        font-size: 12px;
+    }
+
+    .card_blok .deals_cards .cards .sum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_blok .deals_cards .cards .sum b {
+        font-size: 12px;
+    }
+
+    .card_blok .deals_cards .cards .sum span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .card_blok .deals_cards .cards .sum .prosent {
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: var(--color_2);
+        color: var(--font_color);
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .card_blok .quotation {
+        display: grid;
+        grid-template-columns: repeat(1, 94%);
+        grid-template-rows: 270px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card_blok .quotation .card .card_text {
+        display: grid;
+        grid-template-columns: repeat(2, 230px);
+    }
+
+    .card_blok .quotation .card .card_text .text {
+        margin-top: 20px;
+        font-weight: 600;
+        color: var(--font_color);
+        font-size: 20px;
+    }
+
+    .card_blok .quotation .card h1 {
+        font-size: 25px;
+        color: #f4f4f4;
+    }
+
+    .card_blok .quotation .card .card_text button {
+        width: 200px;
+        height: 50px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .card_blok .quotation .card {
+
+        background-image: url("./accessories.img/Design-Blue-Box.png");
+        background-size: cover;
+        padding: 30px;
+    }
+
+    .card_blok .quotation .quotes {
+        background-color: #fff;
+        padding: 30px;
+    }
+
+    .card_blok .quotation .quotes h1 {
+        font-size: 25px;
+    }
+
+    .card_blok .quotation .quotes .carts {
+        margin-top: 30px;
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(2, 45px);
+    }
+
+    .card_blok .quotation .quotes .carts .name {
+        border: 2px solid rgb(196, 196, 196);
+        grid-column: 1/3;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+
+    .card_blok .quotation .quotes .carts .name input {
+        width: 400px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .card_blok .quotation .quotes .carts .quantity {
+        border: 2px solid rgb(198, 198, 198);
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .card_blok .quotation .quotes .carts .quantity input {
+        width: 200px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+    }
+
+    .card_blok .quotation .quotes .carts .piece {
+        border: 2px solid rgb(196, 196, 196);
+        border-radius: 5px;
+        padding: 11px;
+
+        font-size: 18px;
+    }
+
+    .card_blok .quotation .quotes .carts button {
+        height: 30px;
+        background-color: var(--color_2);
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .card_blok .just_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 310px);
+        justify-content: space-evenly;
+    }
+
+    .card_blok .just_cards .card {
+        background-color: #fff;
+        padding: 10px;
+        margin-top: 25px;
+    }
+
+    .card_blok .just_cards .card .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_blok .just_cards .card .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card_blok .just_cards .card .text p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .card_blok .just_cards .card h4 {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .card_blok .just_cards .card p {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .card_blok .text p {
+        color: gray;
+        font-size: 12px;
+    }
+
+    .card_blok .trade_services {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 210px);
+        justify-content: space-evenly;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .card_blok .trade_services .trade_card {
+        background-color: #fff;
+    }
+
+    .card_blok .trade_services .trade_card .image img {
+        width: 300px;
+    }
+
+    .card_blok .trade_services .trade_card .card_text {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+
+    .card_blok .trade_services .trade_card .card_text .text p {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .card_blok .head_x6 hr {
+        width: 60%;
+    }
+
+    .card_blok .flags {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        justify-content: space-evenly;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .card_blok .flags .flag {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card_blok .flags .flag a {
+        text-decoration: none;
+    }
+
+
+    .garden {
+        width: 100%;
+        height: 40px;
+        background-color: #3f2501;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+
+    .garden .check {
+        position: relative;
+        margin-left: 50px;
+        top: 2px;
+    }
+
+    .garden .check img {
+        width: 110px;
+        height: 30px;
+    }
+
+    .garden .check h3 {
+        width: 90px;
+        position: absolute;
+        font-size: 10px;
+        color: #fff;
+        left: 10px;
+        top: 0px;
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+    .garden .check h3 img {
+        width: 5px;
+        height: 5px;
+    }
+
+    .garden h1 {
+        color: #ffffff;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .garden .fig {
+        margin-top: -60px;
+        position: relative;
+        margin-right: 360px;
+    }
+
+    .garden .fig img {
+        height: 40px;
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+
+    .garden .fig button {
+        width: 100px;
+        height: 25px;
+        top: 18px;
+        left: 150px;
+        background-color: #fff;
+        border: none;
+        border-radius: 20px;
+        position: absolute;
+        color: #3f2501;
+        font-weight: 600;
+        z-index: 1;
+    }
+
+    .garden .fig .nuqta {
+
+        position: absolute;
+        top: 18px;
+        left: 10px;
+    }
+
+    .garden .fig .nuqta img {
+        width: 5px;
+        height: 5px;
+
+    }
+
+    .garden .left {
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    footer {
+        width: 100%;
+        height: 160vh;
+        background-color: #445268;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    footer p {
+        color: #ffffff;
+    }
+
+    footer .input_x {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    footer .input_x input {
+        width: 350px;
+        height: 35px;
+        background-color: #313d51;
+        border: 1px solid rgb(255, 255, 255);
+        padding-left: 20px;
+        outline: none;
+        color: #ffffff;
+    }
+
+    footer .input_x button {
+        width: 100px;
+        height: 35px;
+        background-color: #313d51;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffffff;
+        margin-left: 20px;
+    }
+
+    footer .input_text {
+        margin-right: 130px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    footer .footer_links {
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+
+    }
+
+    footer .footer_links .links ul {
+        text-align: left;
+        list-style: none;
+    }
+
+    footer .footer_links .links ul b {
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    footer .footer_links .links ul li a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 2;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    footer hr {
+        width: 80%;
+        border: 1px solid #000;
+        margin-left: 75px;
+    }
+
+    footer .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    footer .download span {
+        color: #ffffff;
+    }
+
+    footer .download .aplle {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #9c9c9c;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    footer .download .android {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #84d83f;
+        padding: 5px;
+        border-radius: 10px;
+
+    }
+
+    footer .download .alibaba {
+        display: flex;
+        align-items: center;
+        padding: 0 80px;
+
+    }
+
+    footer .download .alibaba p {
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    footer .download .follow {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer .download .follow i {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    footer .footer_text {
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    footer .footer_text p {
+        font-size: 10px;
+    }
+
+    footer .sites {
+        width: 400px;
+        text-align: center;
+        padding: 10px 180px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    footer .sites p {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    footer .side_bio {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #fff;
+        margin-top: 70px;
+        gap: 30px;
+    }
+
+
+}
