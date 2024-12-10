@@ -153,7 +153,16 @@ header .asosiy {
     justify-content: space-between;
 
 }
-
+header .asosiy .tab{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0px;
+}
 header .asosiy .search {
     width: 700px;
     height: 30px;
@@ -393,7 +402,9 @@ header .categories .reight a {
     flex-direction: column;
     gap: 25px;
 }
-
+.banner .my_markets .market_reight p{
+    font-size: 12px;
+}
 .banner .my_markets .market_reight .market_card {
     display: flex;
     height: 90px;
@@ -416,7 +427,7 @@ header .categories .reight a {
 }
 
 .banner .my_markets .market_reight button {
-    height: 40px;
+    height: 50px;
     border-radius: 20px;
     border: 2px solid var(--color_2);
     background-color: transparent;
@@ -1489,7 +1500,7 @@ display: none;    }
 
     .banner .grid_blok .item_blok button {
         width: 100px;
-        height: 30px;
+        height: 50px;
         border: 2px solid black;
         border-radius: 40px;
         background-color: transparent;
@@ -1604,7 +1615,7 @@ display: none;    }
 
     .banner .my_markets .market_reight button {
         width: 220px;
-        height: 20px;
+        height: 35px;
         border-radius: 20px;
         border: 2px solid var(--color_2);
         background-color: transparent;
